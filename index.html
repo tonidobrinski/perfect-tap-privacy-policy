@@ -78,12 +78,12 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="subtitle">Perfect Tap: Reflex Challenge<br />Last updated: June 18, 2026</p>
+    <p class="subtitle">Perfect Tap: Reflex Challenge<br />Last updated: June 21, 2026</p>
 
     <p>This Privacy Policy explains how Toni Dobrinski ("we", "us", or "our") collects, uses, stores, and shares information when you use Perfect Tap: Reflex Challenge (the "Game"), our support pages, and related services.</p>
 
     <div class="notice">
-      <strong>Short version:</strong> You can play as a guest without creating an account. If you create an account, we use Firebase to save your progress, coins, achievements, challenge unlocks, and leaderboard data. The Game uses Google AdMob ads and optional in-app purchases processed by Apple or Google. We do not sell your personal information.
+      <strong>Short version:</strong> You can play as a guest without creating an account. If you create an account, we use Firebase to save your progress and leaderboard data. The Game uses Firebase Analytics and Crashlytics to understand usage and diagnose problems, Google AdMob for ads, and Apple or Google for optional in-app purchases. We do not sell your personal information.
     </div>
 
     <nav class="toc" aria-label="Table of contents">
@@ -98,7 +98,8 @@
       <a href="#children">9. Children</a>
       <a href="#rights">10. Your Rights</a>
       <a href="#security">11. Security</a>
-      <a href="#contact">12. Contact</a>
+      <a href="#changes">12. Changes to This Policy</a>
+      <a href="#contact">13. Contact</a>
     </nav>
 
     <h2 id="info">1. Information We Collect</h2>
@@ -113,13 +114,14 @@
     <p>If you create an account or move guest progress to an account, we may store the following data in Firebase:</p>
     <ul>
       <li>Firebase user ID, email address, and display name.</li>
-      <li>Coin balance, high score, personal progress, gameplay stats, achievements, and challenge unlocks.</li>
-      <li>Global leaderboard entry, including display name, score, taps, combo, level, mode, and update time.</li>
+      <li>Coin balance, high score, gameplay statistics, achievements, challenge unlocks, mode mastery, player titles, cosmetic inventory and equipped cosmetics, and daily goal progress.</li>
+      <li>Global and weekly leaderboard data, including display name, score, taps, combo, level, mode, challenge details, week identifier, and update time.</li>
       <li>Purchase ledger information used to prevent duplicate coin grants, such as transaction ID, product ID, platform, coin amount, and timestamp.</li>
     </ul>
 
     <h3>Automatically collected information</h3>
-    <p>Our service providers may collect technical information such as device model, operating system version, app version, IP address, approximate region, advertising identifier, ad interactions, diagnostics, and crash or performance information where enabled.</p>
+    <p>Firebase Analytics and Crashlytics may collect app interactions, screen views, gameplay and progression events, purchase and ad events, Firebase user ID or guest/account status, device model, operating system, app version, approximate region, diagnostics, crash traces, and technical identifiers. We use this information to understand Game usage, measure feature performance, diagnose errors, and improve stability. We do not send your account password or full payment details to analytics.</p>
+    <p>Google AdMob may also collect IP address, device and advertising identifiers, approximate location derived from IP address, ad views, ad interactions, and diagnostic information as described below.</p>
 
     <p>We do not ask for precise GPS location, microphone access, camera access, contacts, or push notification permission in the current version of the Game.</p>
 
@@ -129,8 +131,10 @@
         <tr><td>Email and Firebase UID</td><td>Account login, password reset, cloud save, account deletion.</td></tr>
         <tr><td>Display name and score</td><td>Profile display and global leaderboard.</td></tr>
         <tr><td>Coins, stats, achievements, unlocks</td><td>Saving progress across devices and reinstalls when signed in.</td></tr>
+        <tr><td>Titles, cosmetics, mastery, daily goals</td><td>Saving progression, customization, equipped items, and claimed rewards.</td></tr>
         <tr><td>Transaction ID and product ID</td><td>Delivering purchased coins and preventing duplicate rewards.</td></tr>
         <tr><td>Advertising/device identifiers</td><td>Showing, measuring, and limiting ads through Google AdMob.</td></tr>
+        <tr><td>Analytics and crash data</td><td>Measuring use of the Game, diagnosing failures, and improving performance and stability.</td></tr>
       </tbody>
     </table>
 
@@ -143,21 +147,22 @@
       <li>To display ads, measure ad performance, and manage ad availability.</li>
       <li>To deliver purchased coin packs and prevent duplicate purchase fulfillment.</li>
       <li>To protect the Game from abuse, fraud, cheating, or technical misuse.</li>
+      <li>To measure feature usage, diagnose crashes and non-fatal errors, and improve Game performance and stability.</li>
       <li>To comply with applicable legal obligations.</li>
     </ul>
 
     <h2 id="sharing">3. Sharing and Service Providers</h2>
     <p>We do not sell your personal information. We use third-party service providers that process data for us or independently under their own policies:</p>
     <ul>
-      <li><strong>Google Firebase</strong> for authentication, cloud storage, and database services.</li>
+      <li><strong>Google Firebase</strong> for authentication, cloud storage, Firestore database, analytics, and crash reporting.</li>
       <li><strong>Google AdMob</strong> for rewarded and interstitial advertisements.</li>
       <li><strong>Apple App Store</strong> and <strong>Google Play</strong> for in-app purchase processing.</li>
       <li><strong>Netlify</strong> for hosting our public support and legal pages.</li>
     </ul>
-    <p>If we add analytics, crash reporting, or performance monitoring in a future version, we will update this policy and any app store privacy disclosures as needed.</p>
+    <p>These providers may process information on servers outside your country. Where required, they use legal safeguards for international data transfers. Their handling of data is also governed by their own privacy terms.</p>
 
     <h2 id="ads">4. Ads and Tracking</h2>
-    <p>The Game uses Google AdMob. Ads may include rewarded ads, which are optional and may be shown when you do not have enough coins to continue, and interstitial ads, which may appear between game sessions after several rounds.</p>
+    <p>The Game uses Google AdMob. Rewarded ads are optional and may be offered to continue a run, receive bonus coins, or double an eligible daily goal reward. Interstitial ads may appear between game sessions after several rounds and should not interrupt active gameplay.</p>
     <p>AdMob may process advertising identifiers such as IDFA or Android Advertising ID, device information, approximate location inferred from IP address, ad views, ad clicks, and other interaction data. Ad availability depends on region, device, network connection, and Google ad inventory.</p>
     <p>You can limit ad tracking from your device settings. On iOS, you may be asked whether you allow tracking if personalized advertising is enabled. We may request non-personalized ads where appropriate.</p>
 
@@ -166,7 +171,7 @@
     <p>To deliver coins and prevent duplicate grants, we may store a purchase ledger entry containing transaction ID, product ID, platform, coin amount, and timestamp. Refunds and billing issues are handled by Apple or Google according to their policies.</p>
 
     <h2 id="leaderboards">6. Leaderboards</h2>
-    <p>If you sign in and submit a score, your display name and score-related gameplay details may appear on the global leaderboard and may be visible to other players. Guest scores remain local/personal unless you choose to sign in and move your guest progress to an account.</p>
+    <p>If you sign in and submit a score, your display name and score-related gameplay details may appear on global and weekly leaderboards and may be visible to other players. Weekly rankings use a week identifier and reset for a new weekly period. Guest scores remain local/personal unless you choose to sign in and move your guest progress to an account.</p>
 
     <h2 id="offline">7. Guest Mode and Offline Play</h2>
     <p>You can play as a guest without creating an account. Guest progress is stored locally on your device. If you uninstall the Game, clear app data, or change devices, guest progress may be lost unless you create an account and choose to move the guest progress to that account.</p>
@@ -174,7 +179,7 @@
 
     <h2 id="retention">8. Retention and Deletion</h2>
     <p>We keep account and gameplay data for as long as needed to provide the Game, maintain your account, comply with legal obligations, resolve disputes, and prevent fraud or abuse.</p>
-    <p>You can delete your account from inside the Game. Account deletion removes your Firebase cloud profile, current leaderboard entry, username claim, and purchase ledger stored by us. It does not delete records kept by Apple, Google, or other third-party providers, and it does not automatically refund purchases.</p>
+    <p>You can delete your account from inside the Game. Account deletion removes your Firebase Authentication account, cloud profile, current leaderboard entry, username claim, and purchase ledger stored by us. It does not automatically delete information retained independently by Apple, Google, or other providers, including aggregated analytics or crash information that is not reasonably linked to your active account, and it does not refund purchases.</p>
     <p>You may also contact us at <a href="mailto:druidxdd@gmail.com">druidxdd@gmail.com</a> to request access, correction, or deletion of personal information associated with your account.</p>
 
     <h2 id="children">9. Children</h2>
@@ -182,8 +187,9 @@
     <p>If you are under the age required to consent to data processing in your country, you should use the Game only with permission from a parent or legal guardian.</p>
 
     <h2 id="rights">10. Your Rights</h2>
-    <p>Depending on where you live, you may have rights to access, correct, delete, restrict, object to, or receive a copy of your personal information. You may also have rights related to targeted advertising or consent withdrawal.</p>
+    <p>Depending on where you live, including under the EU General Data Protection Regulation (GDPR), you may have rights to access, correct, delete, restrict, object to, or receive a copy of your personal information. You may also have rights related to targeted advertising or consent withdrawal.</p>
     <p>To exercise privacy rights, contact us at <a href="mailto:druidxdd@gmail.com">druidxdd@gmail.com</a>. We may need to verify your identity before fulfilling a request.</p>
+    <p>If you are in the European Economic Area, you may also lodge a complaint with your local data protection authority. In Bulgaria, the supervisory authority is the <a href="https://cpdp.bg/" rel="noopener noreferrer">Commission for Personal Data Protection</a>.</p>
 
     <h2 id="security">11. Security</h2>
     <p>We use reasonable technical and organizational measures to protect information, including Firebase security rules and account authentication. No internet or storage system can be guaranteed to be completely secure.</p>
